@@ -14,13 +14,6 @@ import ocpp.service.BootNotificationService;
 public class BootNotificationController {
 	@Autowired
 	private BootNotificationService bootNotificationService;
-	public BootNotificationService getBootNotificationService() {
-		return bootNotificationService;
-	}
-
-	public void setBootNotificationService(BootNotificationService bootNotificationService) {
-		this.bootNotificationService = bootNotificationService;
-	}
 	@RequestMapping(value="/bootNotification",method=RequestMethod.GET)
 	@ResponseBody
 	public User bootNotification(@RequestParam("id") String id) {
